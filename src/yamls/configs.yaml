@@ -1,0 +1,16 @@
+experiment:
+    seed : 2022
+    training : true
+    pretrain : true
+
+hyperparams:
+    batch_size   : 16
+    lr           : 0.0005
+    weight_decay : 0
+    epochs       : 100
+    model_name   : 'resnet'
+
+dataset:
+    test_rate     : 0.2
+    val_rate      : 0.2
+    img_format    : 'jpg'
