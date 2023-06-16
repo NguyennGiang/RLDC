@@ -1,1 +1,1 @@
-# RiceLeafDiseaseClassifier
+# Rice Leaf Disease Classifier
