@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.detection.ui.home.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.detection.ui.authen.intro.IntroFragment"
+        android:label="IntroFragment">
+
+        <action
+            android:id="@+id/action_introFragment_to_navigation_authentication"
+            app:destination="@id/navigation_authentication"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/introFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <include app:graph="@navigation/navigation_authentication" />
+
+</navigation>

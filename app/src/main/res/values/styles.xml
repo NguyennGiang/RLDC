@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Define custom styles for TextView, Button, and EditText -->
+    <style name="MyAppTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/svn_poppins_regular</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H1" parent="MyAppTextViewStyle">
+        <item name="fontFamily">@font/svn_poppins_regular</item>
+        <item name="android:textColor">#1D1617</item>
+        <item name="android:textSize">@dimen/text_h1</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H1.SemiBold">
+        <item name="fontFamily">@font/svn_poppins_semibold</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H1.Medium">
+        <item name="fontFamily">@font/svn_poppins_medium</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H1.Bold">
+        <item name="fontFamily">@font/svn_poppins_bold</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H2" parent="MyAppTextViewStyle">
+        <item name="fontFamily">@font/svn_poppins_regular</item>
+        <item name="android:textColor">#1D1617</item>
+        <item name="android:textSize">@dimen/text_h2</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H2.SemiBold">
+        <item name="fontFamily">@font/svn_poppins_semibold</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H2.Medium">
+        <item name="fontFamily">@font/svn_poppins_medium</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H2.Bold">
+        <item name="fontFamily">@font/svn_poppins_bold</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H3" parent="MyAppTextViewStyle">
+        <item name="fontFamily">@font/svn_poppins_regular</item>
+        <item name="android:textColor">#1D1617</item>app
+        <item name="android:textSize">@dimen/text_h3</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H3.SemiBold">
+        <item name="fontFamily">@font/svn_poppins_semibold</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H3.Medium">
+        <item name="fontFamily">@font/svn_poppins_medium</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H3.Bold">
+        <item name="fontFamily">@font/svn_poppins_bold</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H4" parent="MyAppTextViewStyle">
+        <item name="fontFamily">@font/svn_poppins_regular</item>
+        <item name="android:textColor">#1D1617</item>
+        <item name="android:textSize">@dimen/text_h4</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H4.SemiBold">
+        <item name="fontFamily">@font/svn_poppins_semibold</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H4.Medium">
+        <item name="fontFamily">@font/svn_poppins_medium</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.H4.Bold">
+        <item name="fontFamily">@font/svn_poppins_bold</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.Body" parent="MyAppTextViewStyle">
+        <item name="fontFamily">@font/svn_poppins_regular</item>
+        <item name="android:textColor">@color/text_sub</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="MyAppTextViewStyle.Hint" parent="MyAppTextViewStyle">
+        <item name="fontFamily">@font/svn_poppins_regular</item>
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="MyAppButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="fontFamily">@font/svn_poppins_semibold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyAppEditTextStyle" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="fontFamily">@font/svn_poppins_regular</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+        <item name="boxStrokeErrorColor">@color/text_input_box_stroke_error</item>
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundColor">@color/box_background</item>
+        <item name="hintTextColor">#ADA4A5</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="hintTextAppearance">@style/MyAppTextViewStyle.Hint</item>
+    </style>
+</resources>
