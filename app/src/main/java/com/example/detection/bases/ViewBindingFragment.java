@@ -18,7 +18,7 @@ import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
 import com.example.detection.R;
-import com.example.detection.Utils.LogUtil;
+import com.example.detection.utils.LogUtil;
 
 import java.util.Objects;
 

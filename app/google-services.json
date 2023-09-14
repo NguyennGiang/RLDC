@@ -1,18 +1,27 @@
 {
   "project_info": {
     "project_number": "787896727029",
+    "firebase_url": "https://detectionapp-cd90e-default-rtdb.firebaseio.com",
     "project_id": "detectionapp-cd90e",
     "storage_bucket": "detectionapp-cd90e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:787896727029:android:64950a154a76601e5b1cbc",
+        "mobilesdk_app_id": "1:787896727029:android:19510ad3337cae025b1cbc",
         "android_client_info": {
           "package_name": "com.example.detection"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "787896727029-6ruv0vqbv8ftck608rto9dovdc5sq744.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.detection",
+            "certificate_hash": "b5ff9a8289fdd46faf06fb65bbc8772bc1d583e9"
+          }
+        },
         {
           "client_id": "787896727029-0s7nbrejdfmjjglprgougn0j6h06frdk.apps.googleusercontent.com",
           "client_type": 3

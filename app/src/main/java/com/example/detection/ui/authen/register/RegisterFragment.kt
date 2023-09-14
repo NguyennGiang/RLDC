@@ -4,13 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.detection.R
-import com.example.detection.Utils.ValidateUtils
-import com.example.detection.Utils.gone
-import com.example.detection.Utils.visible
+import com.example.detection.utils.ValidateUtils
+import com.example.detection.utils.gone
+import com.example.detection.utils.visible
 import com.example.detection.bases.ViewBindingFragment
 import com.example.detection.databinding.FragmentRegisterBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -41,6 +42,9 @@ class RegisterFragment : ViewBindingFragment<FragmentRegisterBinding>() {
             viewModel.effect.collect{
                 if(it is RegisterFragmentVM.Effect.RegisterSuccess){
                     openFragment(R.id.homeFragment)
+                }
+                if (it is RegisterFragmentVM.Effect.ShowMessage){
+                    Toast.makeText(requireContext(), it.message, Toast.LENGTH_LONG).show()
                 }
             }
         }

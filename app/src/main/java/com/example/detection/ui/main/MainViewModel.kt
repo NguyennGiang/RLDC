@@ -1,6 +1,6 @@
 package com.example.detection.ui.main
 
-import com.example.detection.Utils.SharedPreferencesManager
+import com.example.detection.utils.SharedPreferencesManager
 import com.example.detection.bases.BaseViewModel
 import com.example.detection.bases.UIEffect
 import com.example.detection.bases.UIState

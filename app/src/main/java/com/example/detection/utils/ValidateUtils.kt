@@ -1,4 +1,4 @@
-package com.example.detection.Utils
+package com.example.detection.utils
 
 object ValidateUtils {
     fun validateEmail(email: String): Boolean {

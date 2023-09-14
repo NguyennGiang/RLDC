@@ -9,9 +9,9 @@ import androidx.navigation.Navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.example.detection.R
-import com.example.detection.Utils.SharedPreferencesManager
-import com.example.detection.Utils.gone
-import com.example.detection.Utils.visible
+import com.example.detection.utils.SharedPreferencesManager
+import com.example.detection.utils.gone
+import com.example.detection.utils.visible
 import com.example.detection.bases.ViewBindingFragment
 import com.example.detection.databinding.FragmentIntroBinding
 import com.example.detection.databinding.ItemIntroBinding

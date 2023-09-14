@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import androidx.activity.viewModels
 import androidx.navigation.fragment.NavHostFragment
 import com.example.detection.R
-import com.example.detection.Utils.SharedPreferencesManager
+import com.example.detection.utils.SharedPreferencesManager
 import com.example.detection.bases.ViewBindingActivity
 import com.example.detection.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
