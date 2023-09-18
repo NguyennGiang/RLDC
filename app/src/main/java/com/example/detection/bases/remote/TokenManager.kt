@@ -1,4 +1,4 @@
-import com.example.detection.ui.authen.remote.AuthenticationRepository
+import com.example.detection.ui.authen.repo.AuthenticationRepository
 import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
 

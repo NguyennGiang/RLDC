@@ -5,6 +5,7 @@ import com.example.detection.bases.BaseViewModel
 import com.example.detection.bases.UIEffect
 import com.example.detection.bases.UIState
 import com.example.detection.bases.UserEvent
+import com.example.detection.rx.SchedulersProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -12,10 +13,9 @@ import javax.inject.Inject
 
 @HiltViewModel
 class RegisterFragmentVM @Inject constructor(
+    schedulers: SchedulersProvider,
     sharedPreferencesManager: SharedPreferencesManager,
-) : BaseViewModel<RegisterFragmentVM.Event, RegisterFragmentVM.State, RegisterFragmentVM.Effect>(
-    State()
-) {
+) : BaseViewModel<RegisterFragmentVM.Event, RegisterFragmentVM.State, RegisterFragmentVM.Effect>(schedulers, sharedPreferencesManager) {
 
     sealed class Event : UserEvent() {
         data class RegisterEvent(val email: String, val password: String) : Event()
@@ -32,5 +32,9 @@ class RegisterFragmentVM @Inject constructor(
     override fun handlerUserEvents(event: Event) {
         if (event is Event.RegisterEvent) {
         }
+    }
+
+    override fun createInitialState(): State {
+        return State()
     }
 }
